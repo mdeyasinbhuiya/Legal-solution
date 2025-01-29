@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,6 +19,8 @@
             colors: {
               clifford: "#da373d",
               "primary-color": "#B68C5A",
+              dark02: "#707070",
+              dark01: "#414040",
             },
           },
         },
@@ -42,11 +44,243 @@
       }
     </style>
   </head>
-  <body>
-    <h1 class="header text-primary-color">hellow world</h1>
-    <p class="paragraph">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
-      commodi?
-    </p>
+  <body class="paragraph">
+    <header class="w-11/12 md:w-11/12 lg:w-5/6 mx-auto mt-5">
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Item 1</a></li>
+                <li>
+                  <a>Parent</a>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a>Parent</a>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a>Parent</a>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a>Parent</a>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <a class=""><img src="images/logo2.png" alt="" /></a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-dark02 font-semibold">
+              <li><a>Home</a></li>
+              <li>
+                <details>
+                  <summary>Services</summary>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary>Cases</summary>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary>Blog</summary>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary>Contact Us</summary>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </details>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a class="btn bg-primary-color text-lg font-semibold text-white"
+              >Free Consultation</a
+            >
+          </div>
+        </div>
+      </nav>
+      <!-- section banner -->
+      <div
+        class="bg-[url('./images/banner.png')] text-white bg-no-repeat bg-cover bg-center mt-14 mb-28"
+      >
+        <!-- container -->
+        <div
+          class="text-center py-[104px] xl:px-[239px] bg-[url('./images/Rectangle-5.png')] bg-no-repeat bg-cover bg-center"
+        >
+          <h1 class="md:text-7xl font-bold text-5xl mb-6 header">
+            We Provide Effective <br />Legal Solutions
+          </h1>
+          <p class="mb-8 paragraph">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority <br />
+            have suffered alteration in some form, by injected humour.
+          </p>
+          <input
+            type="text"
+            placeholder="Search your services"
+            class="input input-bordered max-w-[500px] w-11/12 mb-5 paragraph"
+          />
+          <button
+            class="btn bg-primary-color text-white font-semibold text-lg border-none ml-4"
+          >
+            Search
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="w-11/12 md:w-11/12 lg:w-5/6 mx-auto">
+      <!-- section legal practice area -->
+      <div>
+        <!-- !content -->
+        <div class="text-center">
+          <h1 class="text-5xl text-dark01 font-bold header mb-6">
+            The Legal Practice Area
+          </h1>
+          <p class="paragraph text-dark02 mb-16">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have <br />suffered alteration in some form, by
+            injected humour.
+          </p>
+        </div>
+        <!-- container -->
+        <div class="grid lg:grid-cols-3 text-center md:grid-cols-2 grid-cols-1">
+          <!-- card 1 -->
+          <div
+            class="md:px-16 px-8 py-10 lg:border-r border-gray-200 lg:border-b b"
+          >
+            <img src="images/business.png" alt="" class="mx-auto mb-8" />
+            <h2 class="text-3xl text-dark01 header font-bold mb-6">
+              Business Law
+            </h2>
+            <p class="paragraph text-dark02 leading-7 mb-8">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+            <button><img src="images/Frame.png" alt="" /></button>
+          </div>
+          <!-- card 2 -->
+          <div
+            class="md:px-16 px-8 py-10 lg:border-r border-gray-200 lg:border-b lg:bg-gradient-to-t from-[#f3f3f300] to-[#f3f3f3]"
+          >
+            <img src="images/business.png" alt="" class="mx-auto mb-8" />
+            <h2 class="text-3xl text-dark01 header font-bold mb-6">
+              Business Law
+            </h2>
+            <p class="paragraph text-dark02 leading-7 mb-8">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+            <button><img src="images/Frame.png" alt="" /></button>
+          </div>
+          <!-- card 3-->
+          <div class="md:px-16 px-8 py-10 border-gray-200 lg:border-b">
+            <img src="images/business.png" alt="" class="mx-auto mb-8" />
+            <h2 class="text-3xl text-dark01 header font-bold mb-6">
+              Business Law
+            </h2>
+            <p class="paragraph text-dark02 leading-7 mb-8">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+            <button><img src="images/Frame.png" alt="" /></button>
+          </div>
+          <!-- card 4-->
+          <div class="md:px-16 px-8 py-10 lg:border-r border-gray-200">
+            <img src="images/business.png" alt="" class="mx-auto mb-8" />
+            <h2 class="text-3xl text-dark01 header font-bold mb-6">
+              Business Law
+            </h2>
+            <p class="paragraph text-dark02 leading-7 mb-8">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+            <button><img src="images/Frame.png" alt="" /></button>
+          </div>
+          <!-- card 5-->
+          <div class="md:px-16 px-8 py-10 lg:border-r border-gray-200">
+            <img src="images/business.png" alt="" class="mx-auto mb-8" />
+            <h2 class="text-3xl text-dark01 header font-bold mb-6">
+              Business Law
+            </h2>
+            <p class="paragraph text-dark02 leading-7 mb-8">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+            <button><img src="images/Frame.png" alt="" /></button>
+          </div>
+          <!-- card 6-->
+          <div class="md:px-16 px-8 py-10">
+            <img src="images/business.png" alt="" class="mx-auto mb-8" />
+            <h2 class="text-3xl text-dark01 header font-bold mb-6">
+              Business Law
+            </h2>
+            <p class="paragraph text-dark02 leading-7 mb-8">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+            <button><img src="images/Frame.png" alt="" /></button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
   </body>
 </html>
